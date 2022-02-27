@@ -1,0 +1,18 @@
+.lyric{
+    .title{
+        margin-bottom: 20px;
+    }
+    .content-text{
+        max-height:200px;
+        overflow: hidden;
+        font-size: 14px;
+        &.full{
+            max-height: none
+        }
+    }
+    .btn-see{
+        color:#21b685;
+        font-size: 13px;
+        cursor: pointer;
+    }
+}

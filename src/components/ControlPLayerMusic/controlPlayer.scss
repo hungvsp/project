@@ -1,0 +1,125 @@
+
+.player{
+    .player-header{
+        .label{
+            font-size: 14px;
+            color:#6a8385
+        }
+        .name{
+            font-family: Averta-Bold;
+            font-size: 24px;
+            .singer{
+                color:#6a8385
+            }
+        }
+        
+    }
+    .player-controler{
+        padding: 20px;
+        display: flex;
+        background: rgb(3,5,4);
+        background: linear-gradient(81deg, rgba(3,5,4,1) 15%, rgba(50,38,39,1) 34%, rgba(3,5,4,1) 68%);
+        border-radius: 5px;
+        .player-thumb{
+            width: 260px;
+            height: 260px;
+        }
+        .player-info{
+            display: flex;
+            flex-direction:column ;
+            justify-content: space-between;
+            position: relative;
+            flex: 1;
+               
+            .name-detail{
+                font-family: Averta-Bold;
+             
+            }
+            .singer{
+                margin: 0;
+             
+                color:rgba(255,255,255,.54)
+            }
+            .lyrics-karaoke-box{
+                min-height: 120px;
+                height: 120px;
+                margin-top:10px;
+            }
+        }
+        .controler{
+            margin: 0 10px;
+            .process{
+                display:flex;
+                margin: 0 10px;
+
+                .jw{
+                    flex:1;
+                    position: relative;
+                    margin: 0 30px;
+                    .seek{
+                        position: absolute;
+                        top:10px;
+                        z-index:5;
+                        height: 3px;
+                        width: 100%;
+
+                        .rc-slider{
+                            padding: 0;
+                            height: auto;
+                            .rc-slider-rail{
+                                height: 3px;
+                                z-index: 1;
+                            }
+                            .rc-slider-track{
+                                height: 3px;
+                                background: #0ba14b;   
+                                z-index: 3;
+
+                            }
+                            .rc-slider-handle{
+                                z-index: 4;
+                            }
+                            .loaded{
+                                position: absolute;
+                                top:0;
+                                height: 3px;
+                                background: #90ffbf;   
+                                z-index: 2;  
+                            }
+                        }
+                        
+                    }
+                }
+                .time{
+                    font-size: 12px;
+                    color:rgba(255,255,255,.54)
+                }
+            }
+        }
+        .rhap_container{
+            margin: 0 10px;
+            background: transparent;
+            box-sizing:none;
+            box-shadow:none;
+            .rhap_progress-filled{
+                background:  #0ba14b;
+            }
+            .rhap_download-progress{
+                background: #90ffbf;   
+            }
+            .rhap_progress-indicator{
+                background:#0ba14b ;
+                width: 15px;
+                height: 15px;
+                top:-5px;
+            }
+            .rhap_current-time{
+                width: 50px;
+            }
+            .rhap_time {
+                color: #cecece;
+            }
+
+        }
+    }
+}

@@ -6,9 +6,29 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "api": "^4.2.0",
+    "axios": "^0.24.0",
+    "Buffer": "^0.0.0",
+    "crypto": "^1.0.1",
+    "crypto-browserify": "^3.12.0",
+    "format-duration": "^1.4.0",
+    "nhaccuatui-api": "^1.0.0",
+    "nhaccuatui-api-full": "^1.1.0",
+    "rc-slider": "^9.7.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-h5-audio-player": "^3.8.3",
+    "react-jinke-music-player": "^4.24.2",
+    "react-jw-player": "^1.19.1",
+    "react-lrc": "^2.1.4",
+    "react-player": "^2.9.0",
+    "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
+    "reactstrap": "^9.0.1",
+    "sass": "^1.49.0",
+    "stream-browserify": "^3.0.0",
+    "swiper": "^8.0.3",
+    "url-slug": "^3.0.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -34,5 +54,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-jest": "^27.5.1",
+    "jest": "^27.5.1",
+    "react-test-renderer": "^17.0.2"
   }
 }

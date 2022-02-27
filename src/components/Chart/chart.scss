@@ -1,0 +1,98 @@
+.home__chart{
+    .name{
+        font-family: 'Averta-Bold';
+        font-size: 28px ;
+        color:#fff;
+        font-weight: 600;
+        margin-top:10px;
+        &:hover{
+            color:#21b685
+        }
+    }
+    .chart{
+        max-height: 729px;
+        overflow: scroll;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    .chart-item.first{
+        align-items: center;
+        .chart-img{
+            margin-right: 10px;
+            position: relative;
+            width: 110px;
+            height: 110px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            .dark-footer{
+                width: 100%;
+                height: 40px;
+                background:linear-gradient(to top, rgb(5, 3, 3,1), rgba(0, 0, 0, 0));
+                position: absolute;
+                bottom:0;
+                left: 0;
+                z-index: 1;
+            }
+            .index{
+                position: absolute;
+                bottom:5px;
+                left: 5px;
+                font-family: 'Averta-Bold';
+                font-size: 24px;
+                z-index: 2;
+                margin: 0;
+            }
+        }
+        .title{
+            margin-bottom: 10px;
+           
+        }
+    }
+    .chart-item{
+        display: flex;
+    
+        .chart-rank{
+            margin-right: 20px;
+            .index{
+                margin: 0;
+            }
+            .chart-border-bottom{
+                width: 100%;
+                height: 4px;
+                border-radius: 2px;
+                background: #ccc;
+            }
+        }
+        .text-chart-border-bottom{
+            width: 100%;
+            height: 1px;
+            background: #303b4a
+        }
+        &:hover .title{
+            color:#21b685    
+        }
+    }
+    .text{
+        flex:1;
+        .title{
+            margin-bottom: 3px;
+            font-size: 16px;
+            margin-top:10px;
+        }
+        .singer{
+            font-size: 14px;
+            color:#6a8385;
+            margin: 0;
+            margin-bottom:10px;
+
+        }
+        
+    }
+
+
+}

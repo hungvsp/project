@@ -1,0 +1,70 @@
+.player-video{
+    .name{
+        font-family: Averta-Bold;
+        font-size: 24px;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        .singer{
+            color:#6a8385
+        }
+    } 
+    .jwplayer.jw-skin-alaska .jw-display-controls .jw-display-icon-container,
+    .jwplayer.jw-skin-alaska .jw-display-controls .jw-display-icon-container {
+      background-color: rgb(182, 22, 22);
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+    .jw-rightclick-list.jw-reset{
+        display: none;
+    }
+    .jw-icon.jw-icon-inline.jw-button-color.jw-reset.jw-logo-button{
+        display: none;
+    }
+    .jw-slider-container.jw-reset{
+        .jw-buffer.jw-reset{
+            //loaded
+            background: #90ffbf;
+        }
+        .jw-progress.jw-reset{
+            //played
+            background: #0ba14b;
+        }
+    }
+    .jw-icon.jw-icon-tooltip.jw-tooltip-time.jw-button-color.jw-reset{
+        .jw-time-tip.jw-reset::after{
+            display:none ;
+        }
+        .jw-time-time.jw-text.jw-reset{
+            background:rgba(0, 0, 0, 0.823);
+            color:#fff
+        }
+    }
+    .jw-settings-menu{
+        background: rgba(33,33,33,.7);
+        max-width: 128px;
+        right: 50px;
+        .jw-settings-topbar{
+            padding:0;
+            .jw-reset.jw-settings-topbar-buttons{
+                display:none;
+            }
+        }  
+        
+        
+    }
+    .jw-settings-submenu-items{
+            .jw-settings-content-item{
+                font-size: 20px;
+                text-align: center;
+            }
+           
+            .jw-settings-item-active{
+                color:#0ba14b !important;
+                &::before{
+                    display: none;
+                }
+           
+        }
+    }
+}

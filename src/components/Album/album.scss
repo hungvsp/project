@@ -1,0 +1,27 @@
+.home__album{
+  .home__album--header{
+    display: flex;
+    align-items: flex-end;
+    .name{
+      color:#fff;
+      margin: 0;
+      margin-right: 30px;
+      font-family: 'Averta-Bold';
+      font-size: 28px;
+    }
+    .link-title{
+      display:inline-flex;
+      height: 100%;
+      .link-title-item{
+        color:#6a8385;
+        margin: 5px;
+        
+        &.active{
+          color:#fff;
+          font-family: 'Averta-Bold';
+          border-bottom:2px solid #fff
+        }
+      }
+    }
+  }
+}

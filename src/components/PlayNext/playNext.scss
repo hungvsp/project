@@ -1,0 +1,74 @@
+.song-next{
+    margin-top:8px;
+    h2{
+        font-size: 28px;
+    }
+    .autoplay-list{
+        .autoplay-item.first{
+            border-bottom :1px solid #21b685;
+            padding:20px 0;
+            .thumb-song-next{
+                width:100px;
+                margin-right: 10px;
+                border-radius: 5px;
+                overflow: hidden;
+            }
+            .info{
+                .title{
+                    font-size: 19px;
+                }
+                .singer{
+                    color:#ffffffa3;
+                    font-size: 16px;
+                }
+        
+            }
+        }
+        .autoplay-item{
+            padding: 15px 0;
+            border-bottom:1px solid #303b4a;
+            &:nth-child(2)::before{
+                content: 'Có thể bạn thích nghe';
+                position: absolute;
+                font-size: 14px;
+                top:20px;
+                line-height: 17px;
+
+            }
+            &:nth-child(2){
+                position: relative;
+                padding-top:55px;
+                padding-bottom: 15px;
+            }
+            .thumb-song-next{
+                width:50px;
+                margin-right: 10px;
+                border-radius: 2px;
+                overflow: hidden;
+            }
+            .info{
+                .title{
+                    font-size: 14px;
+                    
+                }
+                .singer{
+                    color:#ffffffa3;
+                    font-size: 12px;
+                    &:hover{
+                        color:#21b685
+                    }
+                }
+        
+            }
+            &:hover{
+                cursor: pointer;
+                .info{
+                    .title{
+                        color:#21b685
+                    }
+                } 
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,81 @@
+.playlist-album{
+    background: rgb(33,50,74);
+    .playlist-album-header{
+        background: rgb(50,74,103);
+        padding: 5px 0 5px 10px;
+        h3{
+            font-size: 14px;
+            margin : 0;
+        }
+        span{
+            font-size: 12px;
+        }
+    }
+    ul{
+        max-height:356px;
+        overflow-y: scroll;
+        /* width */
+        &::-webkit-scrollbar {
+            width: 5px;
+        
+        }
+  
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: transparent; 
+            
+        }
+        
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background:#C0C0C0; 
+            border-radius:5px
+        }
+        
+        /* Handle on hover */
+        // &::-webkit-scrollbar-thumb:hover {
+        //     background: #555; 
+        // }
+        .item-play-box{
+            position: relative;
+            padding:10px;
+            border-bottom: rgba(255, 255, 255, 0.03) solid 1px;
+            transition: .1s;
+            &:hover{
+                background: rgba(93,127,168,.5);
+            }
+            .thumb-song{
+                width: 50px;
+                border-radius: 5px;
+                overflow: hidden;
+                margin-right: 10px;
+            }
+            .info{
+                .title{
+                    font-size: 14px;
+                    color:#e0e0e0
+                }
+                .singer{
+                    font-size:11px;
+                    color:#ffffffa3
+                }
+            }
+            &::after {
+                content:'';
+                opacity: 0;
+                position: absolute;
+                top:50%;
+                right: 9px;
+                transform: translateY(-50%);
+                width: 12px;
+                height: 20px;
+                background-image: url('https://i.imgur.com/4EFuBlY.gif');
+                background-repeat: no-repeat;
+            }
+            &.active::after{
+                opacity: 1;
+            } 
+        }
+    }
+}
+ 
