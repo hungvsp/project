@@ -1,13 +1,10 @@
 import {useEffect, useState} from 'react';
-
+import { useParams } from 'react-router-dom';
+import {Container,Row,Col} from 'reactstrap'
 import Ads from '../../components/Ads'
 import ControlPLayerMusic from '../../components/ControlPLayerMusic'
 import PlayNext from '../../components/PlayNext'
 import Lyrics from '../../components/Lyrics'
-
-import { useParams } from 'react-router-dom';
-import {Container,Row,Col} from 'reactstrap'
-
 import {GET_SONG} from './../../contants/uriGetApi'
 
 function Song () {
@@ -40,7 +37,7 @@ function Song () {
             <PlayNext setSong={setSong} />
         </Col>
         <Col xs="8" >
-          content test
+          content test for commit 2
         </Col>
         <Col xs="4" >
           
